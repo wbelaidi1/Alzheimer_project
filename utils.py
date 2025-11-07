@@ -21,4 +21,4 @@ def column_types(df, tgt_col):
     bin_col = nunique[nunique == 2].index.tolist()
     num_col = df.columns.drop(tgt_col + cat_col + bin_col)
                          
-    return num_col, cat_col, bin_col
+    return num_col, cat_col, bin_col, tgt_col
